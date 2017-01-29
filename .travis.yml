@@ -23,6 +23,7 @@ matrix:
       osx_image: xcode8.2
       script:
         - brew install bats
+        - brew uninstall carthage
         - make install
         - bats Source/CarthageIntegration
       env:
